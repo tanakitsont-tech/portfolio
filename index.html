@@ -1,86 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tanakit Sonthe | Robotics Engineer</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Tanakit Sonthe | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-weight: normal;
+            color: #93c5fd;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h3 {
+            color: #60a5fa;
+            border-bottom: 2px solid #1e40af;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background: #020617;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
-    <div class="container">
-        <h1>Tanakit Sonthe</h1>
-        <p>Computer & Robotics Engineering Student</p>
-        <div class="buttons">
-            <a href="mailto:tanakit.sont@bumail.net" class="btn">Contact Me</a>
-            <a href="#" class="btn-outline">Download Resume</a>
-        </div>
-    </div>
+    <h1>TANAKIT SONTHE</h1>
+    <h2>Computer & Robotics Engineering Student</h2>
+    <p>
+        Bangkok, Thailand | Open to relocation<br>
+        📞 +66 98 962 4614 | ✉️ tanakit.sont@bumail.net
+    </p>
 </header>
 
-<section class="about container">
-    <img src="images/profile.jpg" alt="profile">
-    <div>
-        <h2>About Me</h2>
-        <p>
-        Robotics Engineering student with hands-on experience in ROS2, IoT, 
-        computer vision and embedded systems. Strong interest in automation 
-        and human-robot interaction.
-        </p>
+<section>
+    <h3>Professional Summary</h3>
+    <p>
+        Computer and Robotics Engineering student with hands-on experience in robotics systems,
+        ROS2, embedded systems, and wireless sensor networks. Strong foundation in Python and C,
+        with practical experience in robotic simulation, computer vision, and system integration.
+        Highly motivated to work in robotics automation and intelligent systems.
+    </p>
+</section>
+
+<section>
+    <h3>Project Experience</h3>
+
+    <div class="card">
+        <h4>WiFi Heat Map Project (Sep 2025 – Oct 2025)</h4>
+        <ul>
+            <li>Conducted building-wide WiFi site survey by collecting RSSI data</li>
+            <li>Generated heat maps to visualize wireless signal coverage</li>
+            <li>Improved understanding of wireless network planning and optimization</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>ROS2 Humble Fundamentals (Apr 2025 – May 2025)</h4>
+        <ul>
+            <li>Developed ROS2 (Humble) workflows using Python</li>
+            <li>Implemented publishers, subscribers, services, and custom messages</li>
+            <li>Demonstrated robot navigation using TurtleSim simulation</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>Robotic Photo Booth System (Jul 2023 – Sep 2023)</h4>
+        <ul>
+            <li>Designed and developed automated robotic photo booth system</li>
+            <li>Implemented real-time object/person detection for camera triggering</li>
+            <li>Integrated hardware components with Python-based control system</li>
+        </ul>
     </div>
 </section>
 
-<section class="projects container">
-    <h2>Projects</h2>
-
+<section>
+    <h3>Education</h3>
     <div class="card">
-        <h3>WiFi Heat Map Analysis</h3>
-        <p>Collected RSSI data and generated signal coverage heat map using Python.</p>
+        <strong>Bachelor of Engineering (Computer and Robotics Engineering)</strong><br>
+        University of Bangkok, Pathum Thani<br>
+        2023 – Present
     </div>
-
-    <div class="card">
-        <h3>ROS2 TurtleSim Navigation</h3>
-        <p>Implemented publishers, subscribers, services and custom messages in ROS2 Humble.</p>
-    </div>
-
-    <div class="card">
-        <h3>Automated Photo Booth System</h3>
-        <p>Developed object detection-based triggering system integrated with Python control logic.</p>
-    </div>
-
 </section>
 
-<section class="skills container">
-    <h2>Technical Skills</h2>
-
-    <div class="skill">
-        <p>Python</p>
-        <div class="bar"><div class="fill" style="width:90%"></div></div>
+<section>
+    <h3>Technical Skills</h3>
+    <div class="skills">
+        <div class="card">
+            <strong>Programming</strong>
+            <p>Python, C</p>
+        </div>
+        <div class="card">
+            <strong>Robotics</strong>
+            <p>ROS2 (Humble – Basic), Robotics Simulation</p>
+        </div>
+        <div class="card">
+            <strong>Embedded & Hardware</strong>
+            <p>PCB Design (Basic), IP Addressing</p>
+        </div>
+        <div class="card">
+            <strong>Software & Tools</strong>
+            <p>Linux, FreeCAD, Canva</p>
+        </div>
+        <div class="card">
+            <strong>Web & Database</strong>
+            <p>HTML, SQL</p>
+        </div>
     </div>
+</section>
 
-    <div class="skill">
-        <p>ROS2</p>
-        <div class="bar"><div class="fill" style="width:80%"></div></div>
+<section>
+    <h3>Soft Skills</h3>
+    <ul>
+        <li>Problem Solving</li>
+        <li>Analytical & Systematic Thinking</li>
+        <li>Attention to Detail</li>
+        <li>Teamwork</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Certifications</h3>
+    <div class="card">
+        SPEEXX B2.1 English Skill Certificate
     </div>
-
-    <div class="skill">
-        <p>Linux</p>
-        <div class="bar"><div class="fill" style="width:75%"></div></div>
-    </div>
-
-    <div class="skill">
-        <p>SQL</p>
-        <div class="bar"><div class="fill" style="width:70%"></div></div>
-    </div>
-
 </section>
 
 <footer>
-    <p>© 2026 Tanakit Sonthe | Robotics Engineer</p>
+    © 2026 Tanakit Sonthe | Robotics & Intelligent Systems Portfolio
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
