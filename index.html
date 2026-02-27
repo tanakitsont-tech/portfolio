@@ -1,115 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tanakit Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Tanakit Sonthe | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
 
-header {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-header img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #60a5fa;
+            margin-bottom: 20px;
+        }
 
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
 
-h2 {
-    border-bottom: 3px solid #111;
-    display: inline-block;
-    padding-bottom: 5px;
-}
+        header h2 {
+            margin-top: 10px;
+            font-weight: normal;
+            color: #93c5fd;
+        }
 
-.project {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
 
-.project img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-}
+        h3 {
+            color: #60a5fa;
+            border-bottom: 2px solid #1e40af;
+            padding-bottom: 5px;
+        }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: white;
-}
-</style>
+        .card {
+            background: #020617;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+
+        .project-img {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <!-- เปลี่ยนรูปตรงนี้ -->
-    <img src="images/profile.jpg" alt="Profile">
-    <h1>Tanakit Sonthe</h1>
-    <p>Computer & Robotics Engineering Student</p>
+
+    <!-- ใส่รูปโปรไฟล์ตรงนี้ -->
+    <img src="images/profile.jpg" alt="Profile" class="profile-img">
+
+    <h1>TANAKIT SONTHE</h1>
+    <h2>Computer & Robotics Engineering Student</h2>
+    <p>
+        Bangkok, Thailand | Open to relocation<br>
+        📞 +66 98 962 4614 | ✉️ tanakit.sont@bumail.net
+    </p>
 </header>
 
 <section>
-    <h2>About Me</h2>
+    <h3>Professional Summary</h3>
     <p>
-        Robotics Engineering student with experience in Python, ROS2, 
-        IoT systems and computer vision.
+        Computer and Robotics Engineering student with hands-on experience in robotics systems,
+        ROS2, embedded systems, and wireless sensor networks.
     </p>
 </section>
 
 <section>
-    <h2>Projects</h2>
+    <h3>Project Experience</h3>
 
-    <div class="project">
-        <h3>WiFi Heat Map</h3>
-        <p>Created a building-wide WiFi coverage heatmap using RSSI data.</p>
+    <div class="card">
+        <h4>WiFi Heat Map Project (Sep 2025 – Oct 2025)</h4>
+        <ul>
+            <li>Conducted building-wide WiFi site survey by collecting RSSI data</li>
+            <li>Generated heat maps to visualize wireless signal coverage</li>
+        </ul>
+
         <!-- ใส่รูปโปรเจค -->
-        <img src="images/project1.jpg" alt="Project 1">
+        <img src="images/wifi.jpg" alt="WiFi Heatmap" class="project-img">
     </div>
 
-    <div class="project">
-        <h3>ROS2 TurtleSim</h3>
-        <p>Developed ROS2 publisher/subscriber system with navigation demo.</p>
-        <img src="images/project2.jpg" alt="Project 2">
+    <div class="card">
+        <h4>ROS2 Humble Fundamentals (Apr 2025 – May 2025)</h4>
+        <ul>
+            <li>Developed ROS2 workflows using Python</li>
+            <li>Implemented publishers and subscribers</li>
+        </ul>
+
+        <img src="images/ros2.jpg" alt="ROS2 Project" class="project-img">
     </div>
 
+    <div class="card">
+        <h4>Robotic Photo Booth System (Jul 2023 – Sep 2023)</h4>
+        <ul>
+            <li>Developed automated robotic photo booth system</li>
+            <li>Integrated hardware with Python control system</li>
+        </ul>
+
+        <img src="images/photobooth.jpg" alt="Photo Booth" class="project-img">
+    </div>
 </section>
 
 <section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>ROS2</li>
-        <li>C</li>
-        <li>HTML</li>
-        <li>SQL</li>
-        <li>Linux</li>
-    </ul>
+    <h3>Technical Skills</h3>
+    <div class="skills">
+        <div class="card">
+            <strong>Programming</strong>
+            <p>Python, C</p>
+        </div>
+        <div class="card">
+            <strong>Robotics</strong>
+            <p>ROS2 (Humble – Basic)</p>
+        </div>
+        <div class="card">
+            <strong>Embedded</strong>
+            <p>PCB Design, IP Addressing</p>
+        </div>
+        <div class="card">
+            <strong>Tools</strong>
+            <p>Linux, FreeCAD, Canva</p>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Tanakit Sonthe | Email: your@email.com</p>
+    © 2026 Tanakit Sonthe | Robotics Portfolio
 </footer>
 
 </body>
