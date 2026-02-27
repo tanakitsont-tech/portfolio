@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanakit Sonthe | Robotics Portfolio</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* HERO SECTION */
+.hero{
+height:100vh;
+background:url("images/profile.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:50px;
+margin:0;
+letter-spacing:2px;
+}
+
+.hero h2{
+font-weight:normal;
+color:#60a5fa;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-right:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1e40af;
+}
+
+/* SECTION */
+section{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
+
+h3{
+color:#60a5fa;
+border-bottom:2px solid #1e40af;
+padding-bottom:5px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+<h1>TANAKIT SONTHE</h1>
+<h2>Computer & Robotics Engineering Student</h2>
+<a href="mailto:tanakit.sont@bumail.net" class="btn">Contact Me</a>
+<a href="https://github.com/tanakitsont-tech" class="btn">GitHub</a>
+</div>
+</div>
+
+<!-- SUMMARY -->
+<section>
+<h3>Professional Summary</h3>
+<p>
+Robotics Engineering student with hands-on experience in ROS2, embedded systems,
+computer vision and automation systems. Passionate about robotics automation
+and intelligent systems.
+</p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h3>Projects</h3>
+
+<div class="card">
+<h4>WiFi Heat Map Project</h4>
+<p>Collected RSSI data and generated signal coverage heat map using Python.</p>
+</div>
+
+<div class="card">
+<h4>ROS2 Humble Navigation</h4>
+<p>Implemented publishers, subscribers, services and TurtleSim navigation simulation.</p>
+</div>
+
+<div class="card">
+<h4>Robotic Photo Booth</h4>
+<p>Developed object detection-based triggering system integrated with hardware control.</p>
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section>
+<h3>Technical Skills</h3>
+<div class="skills">
+<div class="card">Python</div>
+<div class="card">C</div>
+<div class="card">ROS2</div>
+<div class="card">Linux</div>
+<div class="card">SQL</div>
+<div class="card">Embedded Systems</div>
+</div>
+</section>
+
+<footer>
+© 2026 Tanakit Sonthe | Robotics Portfolio
+</footer>
+
+</body>
+</html>
