@@ -48,6 +48,11 @@ width:100%;
 margin-top:15px;
 border-radius:6px;
 }
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
 footer{
 background:#020617;
 text-align:center;
@@ -64,22 +69,31 @@ color:#9ca3af;
 <img src="images/profile.jpg" class="profile-img">
 <h1>TANAKIT SONTHE</h1>
 <h2>Computer & Robotics Engineering Student</h2>
-<p>Bangkok, Thailand | tanakit.sont@bumail.net</p>
+<p>
+Bangkok, Thailand | Open to relocation<br>
+📞 +66 98 962 4614 | ✉️ tanakit.sont@bumail.net
+</p>
 </header>
 
 <section>
 <h3>Professional Summary</h3>
 <p>
-Computer and Robotics Engineering student with experience in ROS2,
-embedded systems, wireless sensor networks and automation systems.
-Strong foundation in Python and C with hands-on robotic simulation.
+Computer and Robotics Engineering student with hands-on experience in robotics systems,
+ROS2, embedded systems, and wireless sensor networks.
+Strong foundation in Python and C with practical experience in robotic simulation,
+computer vision and system integration.
 </p>
 </section>
 
 <section>
 <h3>WiFi Heat Map Project</h3>
 <div class="card">
-<p>Collected RSSI data and generated heat maps for signal coverage analysis.</p>
+<ul>
+<li>Conducted building-wide WiFi site survey by collecting RSSI data</li>
+<li>Generated heat maps to visualize wireless signal coverage</li>
+<li>Improved understanding of wireless network planning and optimization</li>
+</ul>
+
 <img src="images/wifi1.png" class="project-img">
 <img src="images/wifi2.png" class="project-img">
 <img src="images/wifi3.png" class="project-img">
@@ -89,9 +103,14 @@ Strong foundation in Python and C with hands-on robotic simulation.
 </section>
 
 <section>
-<h3>ROS2 Project</h3>
+<h3>ROS2 Humble Fundamentals</h3>
 <div class="card">
-<p>Implemented ROS2 publisher/subscriber and navigation simulation.</p>
+<ul>
+<li>Developed ROS2 (Humble) workflows using Python</li>
+<li>Implemented publishers, subscribers and custom messages</li>
+<li>Demonstrated robot navigation using TurtleSim simulation</li>
+</ul>
+
 <img src="images/ros1.png" class="project-img">
 <img src="images/ros2.png" class="project-img">
 <img src="images/ros3.png" class="project-img">
@@ -104,16 +123,43 @@ Strong foundation in Python and C with hands-on robotic simulation.
 </section>
 
 <section>
-<h3>Robotic Photo Booth</h3>
+<h3>Robotic Photo Booth System</h3>
 <div class="card">
-<p>Automated camera triggering using object detection and Python control system.</p>
+<ul>
+<li>Designed and developed automated robotic photo booth system</li>
+<li>Implemented real-time object/person detection</li>
+<li>Integrated hardware components with Python-based control system</li>
+</ul>
+
 <img src="images/photobooth1.jpg" class="project-img">
 <img src="images/photobooth2.jpg" class="project-img">
 </div>
 </section>
 
+<section>
+<h3>Technical Skills</h3>
+<div class="skills">
+<div class="card">
+<strong>Programming</strong>
+<p>Python, C</p>
+</div>
+<div class="card">
+<strong>Robotics</strong>
+<p>ROS2 (Humble – Basic), Robotics Simulation</p>
+</div>
+<div class="card">
+<strong>Embedded & Hardware</strong>
+<p>PCB Design (Basic), IP Addressing</p>
+</div>
+<div class="card">
+<strong>Tools</strong>
+<p>Linux, FreeCAD, Canva</p>
+</div>
+</div>
+</section>
+
 <footer>
-© 2026 Tanakit Sonthe | Robotics Portfolio
+© 2026 Tanakit Sonthe | Robotics & Intelligent Systems Portfolio
 </footer>
 
 </body>
