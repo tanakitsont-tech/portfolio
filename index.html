@@ -13,11 +13,13 @@ background:#0f172a;
 color:#e5e7eb;
 line-height:1.6;
 }
+
 header{
 background:linear-gradient(135deg,#1e3a8a,#0f172a);
 padding:60px 20px;
 text-align:center;
 }
+
 .profile-img{
 width:150px;
 height:150px;
@@ -26,16 +28,19 @@ object-fit:cover;
 border:4px solid #60a5fa;
 margin-bottom:20px;
 }
+
 section{
 max-width:1000px;
 margin:auto;
 padding:50px 20px;
 }
+
 h3{
 color:#60a5fa;
 border-bottom:2px solid #1e40af;
 padding-bottom:5px;
 }
+
 .card{
 background:#020617;
 border-left:5px solid #2563eb;
@@ -43,16 +48,31 @@ padding:20px;
 margin-top:20px;
 border-radius:6px;
 }
-.project-img{
-width:100%;
+
+/* 🔥 ปรับขนาดรูปใหม่ */
+.image-grid{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
 margin-top:15px;
-border-radius:6px;
 }
+
+.project-img{
+width:280px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.project-img:hover{
+transform:scale(1.05);
+}
+
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
+
 footer{
 background:#020617;
 text-align:center;
@@ -94,11 +114,14 @@ computer vision and system integration.
 <li>Improved understanding of wireless network planning and optimization</li>
 </ul>
 
+<div class="image-grid">
 <img src="images/wifi1.png" class="project-img">
 <img src="images/wifi2.png" class="project-img">
 <img src="images/wifi3.png" class="project-img">
 <img src="images/wifi4.png" class="project-img">
 <img src="images/wifi15.png" class="project-img">
+</div>
+
 </div>
 </section>
 
@@ -111,6 +134,7 @@ computer vision and system integration.
 <li>Demonstrated robot navigation using TurtleSim simulation</li>
 </ul>
 
+<div class="image-grid">
 <img src="images/ros1.png" class="project-img">
 <img src="images/ros2.png" class="project-img">
 <img src="images/ros3.png" class="project-img">
@@ -119,6 +143,8 @@ computer vision and system integration.
 <img src="images/ros6.png" class="project-img">
 <img src="images/ros7.png" class="project-img">
 <img src="images/ros8.png" class="project-img">
+</div>
+
 </div>
 </section>
 
@@ -131,8 +157,11 @@ computer vision and system integration.
 <li>Integrated hardware components with Python-based control system</li>
 </ul>
 
+<div class="image-grid">
 <img src="images/photobooth1.jpg" class="project-img">
 <img src="images/photobooth2.jpg" class="project-img">
+</div>
+
 </div>
 </section>
 
